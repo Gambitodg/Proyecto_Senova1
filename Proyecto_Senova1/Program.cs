@@ -1,39 +1,62 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Proyecto_Senova1
+namespace ProyectosSENOVA
 {
     class Program
     {
         static void Main(string[] args)
         {
-           
-            //Proyecto miprimerproyecto = new Proyecto();
-            //Proyecto misegundoproyecto = new Proyecto();
-            //Proyecto mitercerproyecto = new Proyecto();
-            Proyecto proyecto4 = new Proyecto("Realidad aumentada" ,12540, "Sistema",12);
-            //mitercerproyecto.IngresarProyecto();
-            //mitercerproyecto.ImprimirProyecto();
-            proyecto4.ImprimirProyecto();
-            
-            //
-            //miprimerproyecto.Area = "Sistemas";
-            //miprimerproyecto.Codigo = 12000;
-            //miprimerproyecto.Duracion = 13;
-            //misegundoproyecto.Nombre = "Desarrollo internet de las cosas IOT";
-            //misegundoproyecto.Area = "Cocina";
-            //misegundoproyecto.Codigo = 18046;
-            //misegundoproyecto.Duracion = 20;
-            //misegundoproyecto.Nombre = "Desarrollo de postres dulces";
-            //
-            //Console.WriteLine($"Nombre:{miprimerproyecto.Nombre}");
-            //Console.WriteLine($"Area:{miprimerproyecto.Area}");
-            //Console.WriteLine($"Codigo: {miprimerproyecto.Codigo}");
-            //Console.WriteLine($"Duración: {miprimerproyecto.Duracion}");
-            //Console.WriteLine($"Nombre:{misegundoproyecto.Nombre}");
-            //Console.WriteLine($"Area:{misegundoproyecto.Area}");
-            //Console.WriteLine($"Codigo: {misegundoproyecto.Codigo}");
-            //Console.WriteLine($"Duración: {misegundoproyecto.Duracion}");
-           Console.ReadLine();
+            //int edad;
+            //int puntaje=0;
+            //Proyecto miProyecto = new Proyecto();
+            //miProyecto.Area = "sistemas";
+            //miProyecto.Codigo = 12000;
+            //miProyecto.Duracion = 13;
+            //miProyecto.Nombre = "Desarrollo internet de las cosas IOT";
+
+            //Console.WriteLine($"Area:{miProyecto.Area}");
+            //Console.WriteLine($"Codigo:{miProyecto.Codigo}");
+            //Console.WriteLine($"Duracion:{miProyecto.Duracion}");
+            //Console.WriteLine($"Nombre:{miProyecto.Nombre}");
+
+            //Proyecto miProyecto1 = new Proyecto();
+            //miProyecto1.Area = "Desarollo";
+            //miProyecto1.Codigo = 14000;
+            //miProyecto1.Duracion = 16;
+            //miProyecto1.Nombre = "Desarrollo Informacion";
+
+            //Console.WriteLine($"Area:{miProyecto1.Area}");
+            //Console.WriteLine($"Codigo:{miProyecto1.Codigo}");
+            //Console.WriteLine($"Duracion:{miProyecto1.Duracion}");
+            //Console.WriteLine($"Nombre:{miProyecto1.Nombre}");
+
+
+            //Proyecto miProyecto2 = new Proyecto();
+            Proyecto miProyecto3 = new Proyecto();
+            miProyecto3.IngresarPrpyecto();
+
+
+            Console.WriteLine("Ingrese la cantidad de cifras para el codigo");
+            int x = int.Parse(Console.ReadLine());
+
+            miProyecto3.ObtetenerMayores(x);
+
+            List<Proyecto> proyectos = new List<Proyecto>();
+            miProyecto3.ImprimirProyecto(proyectos);
+
+            //Proyecto miProyecto4 = new Proyecto("Realidad Aumentada", 2019, "Tecnologia", 1110);
+            //miProyecto4.ImprimirProyecto();
+
+
+            //Proyecto miProyecto5 = new Proyecto("Talento Humano", 2020, "SOCIAL", 1220);
+            //miProyecto5.ImprimirProyecto();
+
+
+            Console.ReadLine();
+
+
+            //Entendido...
 
         }
     }
