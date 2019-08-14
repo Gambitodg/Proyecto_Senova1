@@ -15,6 +15,59 @@ namespace ProyectosSENOVA
             //miProyecto.Duracion = 13;
             //miProyecto.Nombre = "Desarrollo internet de las cosas IOT";
 
+
+
+
+
+
+
+
+
+            //Comienzo Primer Ejercicio
+
+            Proyecto ejercicio1 = new Proyecto();
+            ejercicio1.IngresarPrpyecto();
+            ejercicio1.ObtetenerMayores();
+            
+            //fin Primer Ejercicio
+
+
+            //Comienzo Segundo Ejercicio
+
+
+
+            //Fin Segundo Ejercicio
+
+
+
+            //Comienzo Tercer Ejercicio
+
+
+
+            //Fin Tercer Ejercicio
+
+
+
+
+            //Comienzo Cuarto Ejercicio
+
+            Proyecto ejercicio4 = new Proyecto();
+            ejercicio4.IngresarPrpyecto();
+            ejercicio4.ImprimirArea();
+
+            //Fin Cuarto Ejercicio
+
+
+
+
+
+
+
+
+
+
+
+
             //Console.WriteLine($"Area:{miProyecto.Area}");
             //Console.WriteLine($"Codigo:{miProyecto.Codigo}");
             //Console.WriteLine($"Duracion:{miProyecto.Duracion}");
@@ -33,17 +86,17 @@ namespace ProyectosSENOVA
 
 
             //Proyecto miProyecto2 = new Proyecto();
-            Proyecto miProyecto3 = new Proyecto();
-            miProyecto3.IngresarPrpyecto();
+            ///Proyecto miProyecto3 = new Proyecto();
+            ///miProyecto3.IngresarPrpyecto();
 
 
-            Console.WriteLine("Ingrese la cantidad de cifras para el codigo");
-            int x = int.Parse(Console.ReadLine());
+            ///Console.WriteLine("Ingrese la cantidad de cifras para el codigo");
+            ///int x = int.Parse(Console.ReadLine());
 
-            miProyecto3.ObtetenerMayores(x);
+            ///miProyecto3.ObtetenerMayores(x);
 
-            List<Proyecto> proyectos = new List<Proyecto>();
-            miProyecto3.ImprimirProyecto(proyectos);
+            ///List<Proyecto> proyectos = new List<Proyecto>();
+            ///miProyecto3.ImprimirProyecto(proyectos);
 
             //Proyecto miProyecto4 = new Proyecto("Realidad Aumentada", 2019, "Tecnologia", 1110);
             //miProyecto4.ImprimirProyecto();

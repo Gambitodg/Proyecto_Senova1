@@ -35,15 +35,17 @@ namespace ProyectosSENOVA
         {
 
         }
+
         #endregion
         #region Metodos
-        public void ObtetenerMayores(int x)
+        public void ObtetenerMayores()
         {
             List<Proyecto> pro20 = new List<Proyecto>();
 
             foreach (var item in proyectos)
             {
-                if (item.Codigo > x)
+                 
+                if (item.Codigo>20 && item.Codigo % 2 == 0 )
                 {
                     pro20.Add(item);
                 }
@@ -79,6 +81,17 @@ namespace ProyectosSENOVA
                 Console.WriteLine($"El Codigo del proyecto es:{item.Codigo}");
                 Console.WriteLine($"El Area del proyecto es:{item.Area}");
                 Console.WriteLine($"La durecion del proyecto es:{item.Duracion}");
+            }
+        }
+
+        public void ImprimirArea()
+        {
+            foreach (var item in proyectos)
+            {
+                List<Proyecto> area = new List<Proyecto>();
+
+                Console.WriteLine($"El Area del proyecto es:{item.Area}");
+                
             }
         }
         #endregion
